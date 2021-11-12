@@ -1,4 +1,8 @@
 <%= simple_form_for(@list) do |f| %>
-<%= f.input :name, label: "list name:" %>
-<%= f.submit %>
+<div class="search-form-control form-group">
+<%= f.input :name, label: "list name:", class: "form-control string required" %>
+ </div>
+<button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa"></i> Create
+    </button>
 <% end %>

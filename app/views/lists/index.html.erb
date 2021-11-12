@@ -1,11 +1,34 @@
+<div>
+<img src="https://thumbs.dreamstime.com/b/movie-film-company-logo-design-vector-template-movie-film-company-logo-design-inspiration-vector-template-167661473.jpg" class="card-trip-user avatar-bordered" />
+<ul class="list-inline tabs-underlined">
+    <a href="http://localhost:3000/lists/new" class="tab-underlined active">Create a new list</a>
+</ul>
+</div>
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.ytimg.com/vi/LylBOiwz9Ls/maxresdefault.jpg)">
-  My Lists
+
+<h1>My Lists</h1>
 </div>
 
 
 <div>
 <% @lists.each do |list| %>
-<%= link_to list.name, list_path(list) %>
+<li class="list-inline tabs-underlined">
+<%=  link_to list.name, list_path(list), class: "tab-underlined active" %>
+</li>
 <% end %>
+
 </div>
-<%= link_to 'add a new list', new_list_path %>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with Le Wagon
+  </div>
+</div>
