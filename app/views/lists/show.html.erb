@@ -8,3 +8,5 @@
       <%= link_to "delete", bookmark_path(bookmark), method: :delete %>
 <% end %>
 <%= link_to 'back', lists_path %> | <%= link_to "Add bookmark", new_list_bookmark_path(@list) %>
+
+<%= link_to "delete list", list_path, method: :delete %>
