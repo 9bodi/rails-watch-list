@@ -13,7 +13,7 @@
 <div>
 <% @lists.each do |list| %>
 <li class="list-inline tabs-underlined">
-<%=  link_to list.name, list_path(list), class: "tab-underlined active" %>
+<%=  link_to list.name, list_path(lists), class: "tab-underlined active" %>
 </li>
 <% end %>
 
